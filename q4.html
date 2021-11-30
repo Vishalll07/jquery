@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#slide").click(function () {
+                $("#panel").slideDown("slow");
+            });
+
+            $("#slideup").click(function () {
+                $("#panel").slideUp("fast");
+            });
+            
+            $("#slidetoggle").click(function() {
+                $("#panel2").slideToggle(4000);
+            });
+       
+       
+        });
+    </script>
+
+    <style>
+        #panel,#slide,#slidetoggle,#panel2 {
+            color: greenyellow;
+            padding: 10px;
+            text-align: center;
+            background-color: black;
+            border: solid 5px skyblue;
+        }
+
+        #panel {
+            padding: 70px;
+            display: none;
+        }
+
+        #slideup  {
+           color: white;
+            padding: 10px;
+            text-align:center;
+            background-color: dodgerblue;
+            border: solid 5px purple;
+        }
+        
+        #panel2 {
+            padding: 70px;
+            display: none;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="slide"> WHEN THIS IS CLICKED A NEW PANEL EMERGES </div><br>
+    <div id="panel"> HELLO !! HAVE A GOOD DAY !!</div><br>
+
+    <div id="slideup">WHEN THIS IS CLICKED THE ABOVE PANEL WILL SLIDE UP</div><br>
+  
+    <div id="slidetoggle">WHEN THIS IS CLICKED THE PANEL WILL SLIDE TOGGLE</div><br>
+    <div id="panel2">GOOD MORNING!!</div><br>
+
+</body>
+
+</html>

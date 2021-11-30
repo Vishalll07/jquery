@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("p2, p3").dblclick(function () {
+                alert("MOUSE ENTERED IN FOURTH PARA");
+            });
+            $("p1").click(function () {
+                $("p1").hide();
+            });
+        $("p4").mouseenter(function(){
+           $("p5").hide();
+        })
+        
+        $("p2").mouseleave(function(){
+            alert("ALERT BOX ON THE LEAVE OF SECOND PARA")
+        })
+
+        });
+    </script>
+</head>
+
+<body>
+    
+    <p1><b> first paragraph is about to disappear by using jQuery WITH ONE CLICK.</b></p1> <br>
+    <p2>The second paragraph is going to show ALERT BOX in DOUBLE CLICK.</p2><br>
+    <p3>The third paragraph is also going to  show ALERT BOX in DOUBLE CLICK. </p3><br>
+    <P4>The fourth paragraph is going to HIDE 5TH PARA  on MOUSEENTER.</P4><br>
+    <p5>THIS IS 5TH PARA</p5>
+</body>
+
+</html>
